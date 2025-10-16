@@ -1,0 +1,9 @@
+torch
+opencv-python
+numpy
+Pillow
+flask
+werkzeug
+requests
+firebase_admin
+pyrebase4

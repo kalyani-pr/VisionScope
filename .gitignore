@@ -1,0 +1,66 @@
+# -------------------------------------
+# 🔒 Sensitive & Environment Files
+# -------------------------------------
+Flask-web-app/firebase_config.py
+Flask-web-app/*.json
+!Flask-web-app/object-detection-firebase-adminsdk-example.json
+.env
+
+# -------------------------------------
+# 🧠 Model Weights
+# -------------------------------------
+Flask-web-app/best.pt
+
+# -------------------------------------
+# 🧪 Virtual Environments
+# -------------------------------------
+venv/
+yolo_venv/
+Flask-web-app/venv/
+
+# -------------------------------------
+# 📊 Training Results & Logs
+# -------------------------------------
+2_Training_predictions/train_results/
+Flask-web-app/runs/
+Flask-web-app/output/
+runs/
+
+# -------------------------------------
+# 📁 Uploaded / Generated Files
+# -------------------------------------
+Flask-web-app/uploads/
+Flask-web-app/static/results/
+Flask-web-app/static/uploads/
+
+# -------------------------------------
+# 🖼️ Dataset Files
+# -------------------------------------
+1_Data_preparation/
+*.zip
+
+# -------------------------------------
+# ⚙️ Cache & Compiled Files
+# -------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# -------------------------------------
+# 📝 Logs & Temporary Files
+# -------------------------------------
+*.log
+*.tmp
+*.bak
+
+# -------------------------------------
+# 📓 Jupyter Checkpoints
+# -------------------------------------
+.ipynb_checkpoints/
+
+# -------------------------------------
+# 💻 System Files
+# -------------------------------------
+.DS_Store
+Thumbs.db

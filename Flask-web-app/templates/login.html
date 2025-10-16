@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <!-- Display flash messages -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert alert-danger mt-3">
+                    {% for msg in messages %}
+                        <div style="color: rgb(193, 53, 53);text-align: center;">{{ msg }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+        
+        <form action="/login" method="POST">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="forgot-pwd">
+              <a href="/forgot_password">Forgot Password?</a>
+            </div>
+            <div class="actions">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <div class="options">
+            <a href="/signup">Don't have an account? <span>Signup now</span></a>
+        </div>
+      </div>
+</body>
+</html>

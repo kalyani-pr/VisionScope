@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <div class="card-container">
+            <div class="card">
+                <h2>Upload Image</h2>
+                <a href="/image_upload" class="btn">Image Upload</a>
+            </div>
+            <div class="card">
+                <h2>Upload Video</h2>
+                <a href="/video_upload" class="btn">Video Upload</a>
+            </div>
+        </div>
+        <a href="/logout" class="btn">Logout</a>
+    </div>
+</body>
+</html>

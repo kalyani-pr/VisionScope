@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/static/img/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 335px;
+    height: 380px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: black;
+}
+
+.input-group input {
+    width: 280px;
+    padding: 9px;
+    margin-top: 7px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border: 1.5px solid burlywood;
+    border-radius: 4px;
+    color: brown;
+}
+
+.actions {
+    text-align: center;
+}
+
+.actions button {
+    margin-top: 16px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #9e66db;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #8b51c8;
+}
+
+.options {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.options a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color:  black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.options a span {
+    color: #57248e;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}

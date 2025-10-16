@@ -1,0 +1,10 @@
+train: /content/data_set/train  
+val: /content/data_set/valid  
+
+nc: 36
+names: ['Bus', 'Bushes', 'Person', 'Truck', 'backpack', 'bench',
+        'bicycle', 'boat', 'branch', 'car', 'chair', 'clock', 'crosswalk', 'door',
+        'elevator', 'fire_hydrant', 'green_light', 'gun', 'handbag', 'motorcycle',
+        'person', 'pothole', 'rat', 'red_light', 'scooter', 'sheep', 'stairs', 'stop_sign',
+        'suitcase', 'traffic light', 'traffic_cone', 'train', 'tree', 'truck', 'umbrella',
+        'yellow_light']

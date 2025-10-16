@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}">
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Register</h2>
+    <form action="/signup" method="POST">
+
+        <!-- Display flash messages -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert alert-danger mt-3">
+                    {% for msg in messages %}
+                        <div style="color: rgb(193, 53, 53);text-align: center;">{{ msg }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" required>
+        </div>
+        <div class="actions">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+    <div class="options">
+        <a href="/login">Already have an account? <span>Login now</span>
+        </a>
+    </div>
+  </div>
+</body>
+</html>
