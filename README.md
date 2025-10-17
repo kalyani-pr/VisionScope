@@ -108,10 +108,13 @@ pip install -r requirements.txt
 
 ### 4️⃣ Download the Dataset
 
-The dataset used for training and testing the **VisionScope** model is available externally to keep the repository lightweight.  
-You can download it here: [Google Drive Link](https://drive.google.com/your-dataset-link)  
+The dataset used for training and testing the **VisionScope** model is available externally to keep the repository lightweight.
 
-Once downloaded, extract the folder and place it inside the project directory:
+You can download the prepared dataset from Google drive 
+ 👉 [Google drive link](https://drive.google.com/file/d/132uIz6Cg3TnhF4kNXl6WeIE0jAFwA0EV/view?usp=sharing)  
+
+Once downloaded:
+1. Move the file to your project directory under:
 
 `1_Data_Preparation/`
 
@@ -122,6 +125,21 @@ VisionScope/
  ├── 1_Data_Preparation/
  │    └── dataset_ready/
 ```
+2. Unzip it:
+
+```python
+unzip data_set_ready.zip -d 1_Data_preparation/
+```
+
+3. Update the data.yaml path (if needed) to point to the correct dataset directory.
+Example:
+```yaml
+train: ../1_Data_preparation/train/images
+val: ../1_Data_preparation/valid/images
+nc: <number_of_classes>
+names: ['class1', 'class2', ...]
+```
+
 > ⚠️ The dataset is not included in the repository due to size limitations.
 
 ### 5️⃣ Configure Firebase
@@ -290,5 +308,3 @@ Special thanks to the **Ultralytics YOLO** community and **OpenCV** developers f
 
 This project is developed for educational purposes as a part of academics.  
 You are free to fork and modify it for non-commercial use. 
-
----
